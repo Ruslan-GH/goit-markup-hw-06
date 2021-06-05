@@ -656,7 +656,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
+
 .icon-mail-input {
   fill: #ffffff;
 
