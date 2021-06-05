@@ -504,7 +504,7 @@ body {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  background: #2f303a;
+  background-color: #2f303a;
 }
 
 .color-studio {
@@ -557,6 +557,11 @@ body {
 .logo-menu-address {
   margin-right: 70px;
 }
+
+.footer-social-list {
+  margin-right: 93px;
+}
+
 .offer-title {
   font-family: var(--main-font);
   font-weight: bold;
@@ -584,6 +589,78 @@ body {
 
 .footer .social-list-icon {
   fill: #ffffff;
+}
+
+.mail-input {
+  display: flex;
+  width: auto;
+}
+.mail-input-text {
+  display: block;
+  margin-bottom: 20px;
+
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.email-input {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  padding-left: 16px;
+
+  background-color: inherit;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  color: white;
+}
+
+.email-input::placeholder {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.mail-submit {
+  display: flex;
+}
+.mail-sent-text {
+  width: 200px;
+  height: 50px;
+  left: 1185px;
+  top: 2787px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0;
+
+  background-color: var(--focus-color);
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  color: #ffffff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-mail-input {
+  fill: #ffffff;
+
+  margin-left: 10px;
 }
 /*========== END FOOTER ========== */
 
@@ -774,4 +851,147 @@ body {
 .icon-close-modal {
   fill: currentColor;
 }
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.modal-form-name {
+  margin-bottom: 12px;
+
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.modal-form-label {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: var(--secondary-color);
+}
+
+.modal-form-label:not(:first-child) {
+  margin-top: 10px;
+}
+
+.modal-form-input-wrapper {
+  position: relative;
+  display: block;
+  margin-top: 4px;
+}
+
+.modal-form-input {
+  padding-left: 42px;
+  width: 100%;
+  height: 40px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  transition-property: border-color;
+  transition: 250ms var(--timing-function);
+}
+
+.modal-form-icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+
+  transition-property: fill;
+  transition: 250ms var(--timing-function);
+}
+
+.modal-form-textarea {
+  margin-top: 4px;
+  width: 100%;
+  height: 120px;
+  padding: 12px 16px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  resize: none;
+
+  transition-property: border-color;
+  transition: 250ms var(--timing-function);
+}
+
+.modal-form-textarea::placeholder {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-form-agreement-text {
+  margin-top: 20px;
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
+}
+.modal-form-agreement-text::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  background-image: url("../images/icon-check-empty.svg");
+
+  margin-right: 8px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.modal-form-checkbox:checked + .modal-form-agreement-text::before {
+  background-image: url("../images/icon-check.svg");
+}
+
+.modal-form-agreement-link {
+  color: var(--focus-color);
+}
+
+.modal-form-button {
+  align-self: center;
+  margin-top: 30px;
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+
+  background: var(--focus-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0;
+
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+}
+
+.modal-form-input:focus,
+.modal-form-textarea:focus {
+  border-color: var(--focus-color);
+  outline: none;
+}
+
+.modal-form-input:focus + .modal-form-icon {
+  fill: var(--focus-color);
+}
+
 /* ======= END MODAL WINDOW ============= */
